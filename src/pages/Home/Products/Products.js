@@ -25,7 +25,7 @@ const Products = () => {
                 ></Product>
                 )
             }
-        </div>
+        </div> 
     </div>
     );
 };
