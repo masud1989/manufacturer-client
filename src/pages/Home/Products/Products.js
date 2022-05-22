@@ -15,7 +15,7 @@ const Products = () => {
 
     return (
         <div id='trainings' className='container my-2'>
-        <h1 className="product-title mt-5">Products: {products.length}</h1>
+        <h2 className="product-title mt-5 bg-secondary">Total Products Created: {products.length}</h2>
         <div className="product-container mb-5">
             {
                 firstSixProducts.map(product=> 
