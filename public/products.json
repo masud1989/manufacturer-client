@@ -1,0 +1,48 @@
+
+[
+    {
+        "id": 1,
+        "name": "Yamaha DTS 150 ",
+        "price": "210000",
+        "description": "This is very fast and auto current pickup Bike",
+        "img": "https://i.ibb.co/L5BwK4S/yamaha.jpg",
+        "quantity": 2,
+        "supplier": "M/S Noyon Enterprice"
+    },
+    {
+        "id": 2,
+        "name": "Yamaha DTS 180 ",
+        "price": "250000",
+        "description": "Yes, You can collect it This is very fast and auto current pickup Bike",
+        "img": "https://i.ibb.co/z6z3kWF/yam-5.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Yamaha DTS 150 ",
+        "price": "250000",
+        "description": "This is very Awesome  and auto current pickup Bike",
+        "img": "https://i.ibb.co/LZ0GhZx/yam-4.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Yamaha DTS 150 ",
+        "price": "250000",
+        "description": "This is very Awesome  and auto current pickup Bike",
+        "img": "https://i.ibb.co/LZ0GhZx/yam-4.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Yamaha DTS 150 ",
+        "price": "250000",
+        "description": "This is very Awesome  and auto current pickup Bike",
+        "img": "https://i.ibb.co/LZ0GhZx/yam-4.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Yamaha DTS 150 ",
+        "price": "250000",
+        "description": "This is very Awesome  and auto current pickup Bike",
+        "img": "https://i.ibb.co/LZ0GhZx/yam-4.jpg"
+    }
+    
+]
