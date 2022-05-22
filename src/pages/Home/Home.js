@@ -2,12 +2,13 @@ import React from 'react';
 import Footer from '../../component/shared/Footer';
 import Header from '../../component/shared/Header';
 import Slider from '../../component/Slider/Slider';
+import Products from './Products/Products';
 
 const Home = () => {
     return (
         <div>
             <Slider></Slider>
-            <h1>This is Home page</h1>
+            <Products></Products>
             <Footer></Footer>
         </div>
     );

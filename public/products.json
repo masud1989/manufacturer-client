@@ -43,6 +43,13 @@
         "price": "250000",
         "description": "This is very Awesome  and auto current pickup Bike",
         "img": "https://i.ibb.co/LZ0GhZx/yam-4.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Yamaha DTS 1500 ",
+        "price": "25000",
+        "description": "This is very Awesome  and auto current pickup Bike",
+        "img": "https://i.ibb.co/LZ0GhZx/yam-4.jpg"
     }
     
 ]
