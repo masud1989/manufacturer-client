@@ -32,13 +32,9 @@ const SocialLogin = () => {
             {errorElement}
             <div>
                 <button onClick={()=> SignInWithGoogle() } className='btn btn-info w-50 d-block mx-auto my-2 text-white'>
-                    
                      Sign In with Google 
                 </button>
                 
-                <button onClick={()=>signInWithGithub()} className='btn btn-info w-50 d-block mx-auto my-1 text-white'>
-                       Sign In with Github
-                </button>
             </div>
     
         </div>

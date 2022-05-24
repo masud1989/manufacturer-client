@@ -9,6 +9,8 @@ import Register from './pages/Login/Register';
 import AddProduct from './pages/ManageProduct/AddProduct';
 import ManageProduct from './pages/ManageProduct/ManageProduct';
 import 'react-toastify/dist/ReactToastify.css';
+import RequireAuth from './pages/Login/RequireAuth';
+import Purchase from './pages/Home/Purchase/Purchase';
 
 
 function App() {
@@ -21,9 +23,30 @@ function App() {
 
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='register' element={<Register></Register>}></Route>
-
         
-        <Route path='manage-product' element={<ManageProduct></ManageProduct>}></Route>
+        <Route path='product/:id' element={
+          <RequireAuth>
+            <Purchase></Purchase>
+          </RequireAuth>
+          }>
+        </Route>
+
+        <Route path='manage-product' element={
+          <RequireAuth>
+            <ManageProduct></ManageProduct>
+          </RequireAuth>
+        }>
+        </Route>
+
+        {/* <Route path='purchase/' element={
+            <RequireAuth>
+                <Purchase></Purchase>
+            </RequireAuth>
+          }>
+
+        </Route> */}
+        
+        {/* <Route path='manage-product' element={<ManageProduct></ManageProduct>}></Route> */}
         
       </Routes>
     </div>
