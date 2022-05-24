@@ -6,7 +6,7 @@ import review3 from '../../../images/reviewer/review3.jpg';
 const Reviews = () => {
     return (
         <div className='container my-5'>
-            <h3 className='bg-primary text-success text-center text-white'>Reviews from our Clients</h3>
+            <h3 className='bg-success text-white p-1 text-center text-white'>Reviews from our Clients</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">

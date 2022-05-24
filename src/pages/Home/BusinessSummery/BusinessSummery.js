@@ -4,8 +4,8 @@ import { Card } from 'react-bootstrap';
 const BusinessSummery = () => {
     return (
        <div>
-           <h3 className='container bg-info text-center text-white'>Our Business Summery</h3>
-            <div className='container mx-auto row  d-flex justify-content-around align-items-center my-5'>
+           <h3 className='container bg-success p-2 text-center text-white'>Our Business Summery</h3>
+            <div className='container mx-auto row  d-flex justify-content-around align-items-center my-2'>
            <div className='col-sm-3 col-md-4 col-lg-4'>
                 <Card border="primary" >
                     <Card.Header>Header</Card.Header>

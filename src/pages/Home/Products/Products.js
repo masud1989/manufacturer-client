@@ -8,17 +8,17 @@ const Products = () => {
     const firstSixProducts = products.slice(0,6);
 
     useEffect( ()=>{
-        fetch('products.json')
+        fetch('http://localhost:5000/product')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     }, [])
 
     return (
         <div id='trainings' className='container my-2'>
-        <h2 className="product-title mt-5 bg-secondary">Total Products Created: {products.length}</h2>
+        <h2 className="product-title mt-5 bg-success">Total Products Created: {products.length}</h2>
         <div className="product-container mb-5">
             {
-                firstSixProducts.map(product=> 
+                products.map(product=> 
                 <Product 
                     key={product._id}
                     product = {product}

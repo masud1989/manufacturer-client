@@ -14,60 +14,60 @@ const Slider = () => {
                 <Carousel.Item>
                     <img
                     className="d-block w-100 mb-5"
-                    style={{height:'400px'}}
+                    style={{height:'300px'}}
                     src={slider1}
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h3 className='text-white' className='text-white'>Very Very Speedy</h3>
+                    <h3  className='text-success'>Very Very Speedy</h3>
                     <p>This byke is very speedy. If you want to shunt you can choose it</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    style={{height:'400px'}}
+                    style={{height:'300px'}}
                     className="d-block w-100 mb-5"
                     src={slider2}
                     alt="Second slide"
                     />
                     <Carousel.Caption>
-                    <h3 className='text-white' className='text-white'>Very Very Speedy</h3>
+                    <h3 className='text-success'>Very Very Speedy</h3>
                     <p>This byke is very speedy. If you want to shunt you can choose it</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    style={{height:'400px'}}
+                    style={{height:'300px'}}
                     className="d-block w-100 mb-5"
                     src={slider3}
                     alt="Third slide"
                     />
                     <Carousel.Caption>
-                    <h3 className='text-white' className='text-white'>Very Very Speedy</h3>
+                    <h3 className='text-success'>Very Very Speedy</h3>
                     <p>This byke is very speedy. If you want to shunt you can choose it</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    style={{height:'400px'}}
+                    style={{height:'300px'}}
                     className="d-block w-100 mb-5"
                     src={slider4}
                     alt="Third slide"
                     />
                     <Carousel.Caption>
-                    <h3 className='text-white' className='text-white'>Very Very Speedy</h3>
+                    <h3 className='text-success'>Very Very Speedy</h3>
                     <p>This byke is very speedy. If you want to shunt you can choose it</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    style={{height:'400px'}}
+                    style={{height:'300px'}}
                     className="d-block w-100 mb-5"
                     src={slider5}
                     alt="Third slide"
                     />
                     <Carousel.Caption>
-                    <h3 className='text-white' className='text-white'>Very Very Speedy</h3>
+                    <h3 className='text-success'>Very Very Speedy</h3>
                     <p>This byke is very speedy. If you want to shunt you can choose it</p>
                     </Carousel.Caption>
                 </Carousel.Item>
