@@ -6,6 +6,9 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Header from './component/shared/Header';
 import Register from './pages/Login/Register';
+import AddProduct from './pages/ManageProduct/AddProduct';
+import ManageProduct from './pages/ManageProduct/ManageProduct';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -19,6 +22,8 @@ function App() {
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='register' element={<Register></Register>}></Route>
 
+        
+        <Route path='manage-product' element={<ManageProduct></ManageProduct>}></Route>
         
       </Routes>
     </div>

@@ -30,6 +30,9 @@ const Header = () => {
                         {
                             user?
                                 <>
+                                    <Nav.Link as={Link} to='/manage-product' >Manage Product</Nav.Link>
+                                    <Nav.Link as={Link} to='/manage-order' >Manage-Order</Nav.Link>
+                                    <Nav.Link as={Link} to='/inventory' >My Profile</Nav.Link>
                                     <Nav.Link as={Link} to='/inventory' >Inventory</Nav.Link>
                                     <Nav.Link as={Link} to='/my-items' >My Item</Nav.Link>
                                     <a onClick={handleLogout} className="btn btn-success text-danger">Logout</a>
