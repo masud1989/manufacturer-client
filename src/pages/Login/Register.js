@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import SocialLogin from './SocialLogin';
 import auth from '../../firebase.init';
 import { toast, ToastContainer } from 'react-toastify';
+import useToken from '../../hooks/useToken';
 
 
 const Register = () => {
@@ -15,6 +16,7 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, {useSendEmailVerification:true});
 
+    const [token] = useToken(user);
 
     const navigate = useNavigate();
     const navigateLogin = () => {
@@ -34,7 +36,7 @@ const Register = () => {
         // console.log('Profile Updated');
         console.log('Created');
         toast('Registration Success!');
-        navigate('/home');
+        // navigate('/home');
 
     }
 

@@ -2,14 +2,15 @@ import React from 'react';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useToken from '../../hooks/useToken';
 
 const SocialLogin = () => {
     const [SignInWithGoogle, googleUser, googleLoading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, githubUser, githubLoading, githubError ]= useSignInWithGithub(auth);
     const navigate = useNavigate();
     let errorElement; 
-
-    if(googleLoading || githubLoading){
+    const [token] = useToken(googleUser);
+    if(token){
         <p>Loading........................</p>
     }
 

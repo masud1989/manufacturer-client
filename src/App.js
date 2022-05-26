@@ -11,6 +11,7 @@ import ManageProduct from './pages/ManageProduct/ManageProduct';
 import 'react-toastify/dist/ReactToastify.css';
 import RequireAuth from './pages/Login/RequireAuth';
 import Purchase from './pages/Home/Purchase/Purchase';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 
 function App() {
@@ -36,6 +37,13 @@ function App() {
             <ManageProduct></ManageProduct>
           </RequireAuth>
         }>
+        </Route>
+
+        <Route path='dashboard' element={
+          <RequireAuth>
+            <Dashboard></Dashboard>
+          </RequireAuth>
+          }>
         </Route>
 
         {/* <Route path='purchase/' element={
