@@ -31,8 +31,8 @@ const Users = () => {
                         users.map(user=> 
                             <tr key={user._id}>
                                 <td>{user.email}</td>
-                                <td><Button className='btn btn-info'>Make Admin</Button></td>
-                                <td><Button className='btn btn-danger'>Delete</Button></td>
+                                <td><a to='/' className='btn btn-info'>Make Admin</a></td>
+                                <td><a onClick={()=>handleDeleteUser} className='btn btn-danger'>Delete</a></td>
                                 {/* <td>
                                     <Link to='/testxxj' className='btn btn-info mx-1'>Edit</Link>
                                     <a onClick={()=>handleDeleteUser(user._id)} className='btn btn-danger mx-1'>Delete</a>

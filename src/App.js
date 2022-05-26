@@ -13,6 +13,7 @@ import RequireAuth from './pages/Login/RequireAuth';
 import Purchase from './pages/Home/Purchase/Purchase';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Users from './pages/Dashboard/Users/Users';
+import DashboardHome from './pages/Dashboard/DashboardHome';
 
 
 function App() {
@@ -33,18 +34,15 @@ function App() {
           }>
         </Route>
 
-        <Route path='manage-product' element={
-          <RequireAuth>
-            <ManageProduct></ManageProduct>
-          </RequireAuth>
-        }>
-        </Route>
-
+{/* Nested Route Starts here=============================================== */}
         <Route path='dashboard' element={
           <RequireAuth>
             <Dashboard></Dashboard>
           </RequireAuth>
           }>
+            <Route index element={<DashboardHome></DashboardHome>}></Route>
+            <Route path='manage-product' element={<ManageProduct></ManageProduct>}></Route>
+            <Route path='users' element={<Users></Users>}></Route>
         </Route>
 
         <Route path='users' element={
