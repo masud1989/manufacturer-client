@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import RequireAuth from './pages/Login/RequireAuth';
 import Purchase from './pages/Home/Purchase/Purchase';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Users from './pages/Dashboard/Users/Users';
 
 
 function App() {
@@ -46,6 +47,12 @@ function App() {
           }>
         </Route>
 
+        <Route path='users' element={
+          <RequireAuth>
+            <Users></Users>
+          </RequireAuth>
+          }>
+        </Route>
         {/* <Route path='purchase/' element={
             <RequireAuth>
                 <Purchase></Purchase>
