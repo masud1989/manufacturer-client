@@ -36,7 +36,7 @@ const Register = () => {
         // console.log('Profile Updated');
         console.log('Created');
         toast('Registration Success!');
-        // navigate('/home');
+        navigate('/dashboard');
 
     }
 

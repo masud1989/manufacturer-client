@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import UserRow from './UserRow';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
@@ -12,11 +13,9 @@ const Users = () => {
         .then(data => setUsers(data))
     }, [])
 
-    const handleDeleteUser = id =>{
-        console.log('OK ');
-    }
+    
     return (
-        <div className='container mc-auto mt-5'>
+        <div className='container mx-40 mt-5'>
             <h1 className='bg-success text-white text-center'> Total Users: {users.length}  </h1>
             <table className="table table-sm mb-10">
                 <thead>
@@ -29,15 +28,10 @@ const Users = () => {
                 <tbody>
                     {
                         users.map(user=> 
-                            <tr key={user._id}>
-                                <td>{user.email}</td>
-                                <td><a to='/' className='btn btn-info'>Make Admin</a></td>
-                                <td><a onClick={()=>handleDeleteUser} className='btn btn-danger'>Delete</a></td>
-                                {/* <td>
-                                    <Link to='/testxxj' className='btn btn-info mx-1'>Edit</Link>
-                                    <a onClick={()=>handleDeleteUser(user._id)} className='btn btn-danger mx-1'>Delete</a>
-                                </td>                                 */}
-                            </tr>
+                            <UserRow
+                                key={user._id}
+                                user={user}
+                            ></UserRow>
                             )
                     }
                 </tbody>
