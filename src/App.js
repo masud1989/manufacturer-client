@@ -14,6 +14,7 @@ import Purchase from './pages/Home/Purchase/Purchase';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Users from './pages/Dashboard/Users/Users';
 import DashboardHome from './pages/Dashboard/DashboardHome';
+import AddReview from './pages/Dashboard/Reviews/AddReview';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             <Route index element={<DashboardHome></DashboardHome>}></Route>
             <Route path='manage-product' element={<ManageProduct></ManageProduct>}></Route>
             <Route path='users' element={<Users></Users>}></Route>
+            <Route path='add-review' element={<AddReview></AddReview>} ></Route>
         </Route>
 
         <Route path='users' element={
