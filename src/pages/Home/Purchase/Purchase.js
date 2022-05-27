@@ -43,24 +43,29 @@ const Purchase = () => {
     return (
         <div>
             <div className='w-50 mx-auto'>
-            <h1 className='bg-success text-white mt-5'>Purchase Product of ID :{product._id} </h1>
+            <h1 className='bg-success text-white mt-5'>Order of Product ID :{product._id} </h1>
 
             <div className="card mb-3">
                 <img src={product.img} className="card-img-top" alt="" />
                 <div className="card-body">
                     <h3 className="card-title bg-warning text-white p-2">Name: {product.name}</h3>
                     <h4 className="card-title">Unit Price: {product.price}</h4>
-                    <h4 className="card-title">Quantity Purchase: {product.price}</h4>
-                    <h4 className="card-title">Total Price Minimum Purchase: {product.price}</h4>
-                    <h4 className="card-title">Minimum Purchase: {product.price}</h4>
-                    <h4 className="card-title">Quantity Available: {product.quantity}</h4>
+                    <h4 className="card-title">Quantity of Purchase: </h4>
+                    <h4 className="card-title">Total Price: </h4>
+                    <h4 className="card-title">Minimum Order: {product.minOrderQty}Pcs</h4>
+                    <h4 className="card-title"> Available Stock: {product.availableStock}</h4>
                     <p className="card-text"><strong>Details:</strong>  {product.description}</p>
                     <div className='d-flex justify-content-around '>
-                        <Button onClick={handlePurchase} className='btn btn-success'>Purchase</Button>
-                        <form>
+                       <form>
+                            <Button  className='btn btn-success'>+</Button>
                             <input type='text' name='stock' placeholder='Quantity'/> 
-                            <Button  className='btn btn-success'>Stock Update</Button>
+                            <Button  className='btn btn-success'>-</Button>
+                            
                         </form>
+                        <br></br>
+                        <div>
+                            <Button onClick={handlePurchase} className='btn btn-success'>Purchase</Button>
+                        </div>
                     </div>
                     <ToastContainer></ToastContainer>
                 </div>

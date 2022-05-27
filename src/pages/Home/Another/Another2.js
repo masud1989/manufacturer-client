@@ -2,7 +2,6 @@ import React from 'react';
 import featured1 from '../../../images/slider/1.jpg';
 import featured2 from '../../../images/slider/2.jpg';
 import featured3 from '../../../images/slider/3.jpg';
-import featured4 from '../../../images/slider/4.jpg';
 
 const Another2 = () => {
     return (
