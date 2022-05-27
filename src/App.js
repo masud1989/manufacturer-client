@@ -73,3 +73,4 @@ export default App;
 
 
 // Client Repo:  https://github.com/programming-hero-web-course1/manufacturer-website-client-side-masud1989 
+// Client Live Site:  https://hand-tools-center.web.app
