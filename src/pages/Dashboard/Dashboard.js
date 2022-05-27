@@ -13,19 +13,19 @@ const Dashboard = () => {
     const [admin] = useAdmin(user);
 
     return (    
-        <div class="d-flex" id="wrapper">
-            <div class="border-end bg-white" id="sidebar-wrapper">
-                <div class="list-group list-group-flush">
-                {admin && <Link to='/dashboard/manage-product' class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Manage Product</Link>}
-                    <Link to='/my-orders' class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Orders</Link>
-                    {admin && <Link to='/dashboard/users' class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">User Management</Link>}
-                    <Link to='/dashboard/add-review' class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Add a Review</Link>
-                    <Link to='/test' class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Profile</Link>
+        <div className="d-flex" id="wrapper">
+            <div className="border-end bg-white" id="sidebar-wrapper">
+                <div className="list-group list-group-flush">
+                {admin && <Link to='/dashboard/manage-product' className="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Manage Product</Link>}
+                    <Link to='/my-orders' className="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Orders</Link>
+                    {admin && <Link to='/dashboard/users' className="list-group-item list-group-item-action list-group-item-light p-3" href="#!">User Management</Link>}
+                    <Link to='/dashboard/add-review' className="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Add a Review</Link>
+                    <Link to='/test' className="list-group-item list-group-item-action list-group-item-light p-3" href="#!">My Profile</Link>
                 </div>
             </div>
             <div id="page-content-wrapper">   
                   
-                <div class="container">
+                <div className="container">
                      <Outlet></Outlet> 
                 </div>
                   

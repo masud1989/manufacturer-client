@@ -15,6 +15,9 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import Users from './pages/Dashboard/Users/Users';
 import DashboardHome from './pages/Dashboard/DashboardHome';
 import AddReview from './pages/Dashboard/Reviews/AddReview';
+import Blogs from './pages/Home/Blogs';
+import Portfolio from './pages/Home/Portfolio';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='home' element={<Home></Home>}></Route>
+        <Route path='blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='portfolio' element={<Portfolio></Portfolio>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
 
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='register' element={<Register></Register>}></Route>
@@ -74,4 +80,11 @@ export default App;
 
 // Client Repo:  https://github.com/programming-hero-web-course1/manufacturer-website-client-side-masud1989 
 // Client Live Site:  https://hand-tools-center.web.app
+
+//Server Repo: https://github.com/programming-hero-web-course1/manufacturer-website-server-side-masud1989
 // Server Live Site:  https://obscure-hamlet-59270.herokuapp.com/
+
+
+//Admin User: 
+// email: test3@test.com
+//Password: 123456
