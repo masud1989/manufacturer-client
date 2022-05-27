@@ -6,7 +6,6 @@ import UserRow from './UserRow';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
-
     useEffect(() =>{
         fetch('http://localhost:5000/user')
         .then(res => res.json())
