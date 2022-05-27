@@ -18,7 +18,7 @@ const AddReview = () => {
         // console.log({product});
 
         // sending data  =========================================
-        fetch('http://localhost:5000/review',{
+        fetch('https://obscure-hamlet-59270.herokuapp.com/review',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

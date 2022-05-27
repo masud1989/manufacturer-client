@@ -26,7 +26,7 @@ const AddProduct = () => {
         // console.log({product});
 
         // sending data  =========================================
-        fetch('http://localhost:5000/product',{
+        fetch('https://obscure-hamlet-59270.herokuapp.com/product',{
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

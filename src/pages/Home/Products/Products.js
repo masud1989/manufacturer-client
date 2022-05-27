@@ -8,7 +8,7 @@ const Products = () => {
     const lastSixProducts = products.slice(-6);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/product')
+        fetch('https://obscure-hamlet-59270.herokuapp.com/product')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     }, [])

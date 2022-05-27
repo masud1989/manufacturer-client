@@ -6,7 +6,7 @@ const ViewProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect( ()=>{
-        fetch('http://localhost:5000/product')
+        fetch('https://obscure-hamlet-59270.herokuapp.com/product')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     }, [])
@@ -15,7 +15,7 @@ const ViewProduct = () => {
         const proceed = window.confirm('Are You sure to Delete');
             if(proceed){
                 console.log('Deleting Product', id);
-                const url = `http://localhost:5000/product/${id}`;
+                const url = `https://obscure-hamlet-59270.herokuapp.com/product/${id}`;
                 fetch(url, {
                     method: 'DELETE'
                 })
